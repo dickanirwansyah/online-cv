@@ -1,45 +1,21 @@
 
-{% if site.data.educations %}
-    {% if site.education_in_main %}
-    
         <section class="section educations-section">
-        <h2 class="section-title"><i class="fa fa-graduation-cap"></i>Education</h2>
-        {% for education in site.data.educations %}
+        <h2 class="section-title"><i class="fa fa-graduation-cap"></i>Pernah Menuntut Ilmu</h2>
           <div class="item">
           
             <div class="meta">
-            
+   
               <div class="upper-row">
-                <h3 class="degree">{{ education.degree }}</h3>
-                <div class="time">{{ education.time }}</div>
+                <h3 class="degree"></h3>
+                <div class="time"></div>
               </div>
               
               <div class="university">{{ education.university }}</div>
             </div>
-           
-            {% if education.details %}
             <div class="details">
-              <p>{{ education.details }}</p>
+              <p></p>
             </div><
-            {% endif %}
           </div>
-        {% endfor %}
-        
         </section>
-    {% else %}
-        <div class="education-container container-block">
 
-        <h2 class="container-block-title">Education</h2>
-
-        {% for education in site.data.educations %}
-            <div class="item">
-            <h4 class="degree">{{ education.degree }}</h4>
-          <h5 class="meta">{{ education.university }}</h5>
-          <div class="time">{{ education.time }}</div>
-        </div>
-      {% endfor %}
-
-    </div>
-    {% endif %}
-{% endif %}
 
